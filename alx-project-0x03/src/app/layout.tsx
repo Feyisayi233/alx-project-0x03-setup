@@ -27,8 +27,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* Shared Layout with Header and Footer */}
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
 }
+
+import Layout from "../../components/layouts/Layout";
